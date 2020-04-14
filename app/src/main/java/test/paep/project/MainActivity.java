@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         adView = findViewById(R.id.adView);
-        adView.setClientId("PAD-cbkceefyahdg"); //할당받은 광고단위(clientID) 작성
+        adView.setClientId("PAD-xxxxxxxxxxxx"); //할당받은 광고단위(clientID) 작성
         adView.setAdHandler(new Handler() {
             public void handleMessage(Message message) {
                 try {
