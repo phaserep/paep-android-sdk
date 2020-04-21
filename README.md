@@ -52,13 +52,11 @@ protected void onCreate(Bundle savedInstanceState) {
       public void handleMessage(Message message) {
           try {
               switch (message.what) {
-                  case PaepAdView.AD_SUCCEED:
-                      break;
-                  case PaepAdView.AD_ERROR:
+                  case PaepAdView.AD_LOAD:
                       break;
                   case PaepAdView.AD_CLICK:
                       break;
-                  case PaepAdView.AD_FAILED:
+                  default:
                       break;
               }
           } catch (Exception e) {}
