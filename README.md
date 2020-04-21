@@ -1,4 +1,4 @@
-# PAEP Android SDK Guide (ver 1.0.1)
+# PAEP Android SDK Guide (ver 1.0.2)
 
 * PAEP 운영정책에 위배되는 경우 수익금 지급이 정지될 수 있으니 유의바랍니다.
 
@@ -13,7 +13,7 @@
 1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
 ```
 dependencies {
-    implementation 'kr.co.paep:paep-sdk:1.0.1'
+    implementation 'kr.co.paep:paep-sdk:1.0.2'
 }
 ```
 
