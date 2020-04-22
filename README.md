@@ -13,7 +13,7 @@
 1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
 ```
 dependencies {
-    implementation 'kr.co.paep:paep-sdk:1.0.2'
+    implementation 'kr.co.paep:paep-sdk:1.0.4'
 }
 ```
 
@@ -66,5 +66,17 @@ protected void onCreate(Bundle savedInstanceState) {
   adView.setAdQuery(); //광고 요청
 }
 ```
+    
+## HELP
+### 에러 코드
+| message.what | 의미 |
+|:---:|:---:|
+| `101` | 광고 요청 |
+| `201` | 광고 클릭 |
+| `301` | 광고 요청 실패 |
+| `302` | 광고 소재 없음 |
+| `401` | 광고 로딩 실패 |
+| `402` | SDK 내부 오류 |
+
     
 Copyright © PAEP. All rights reserved.
