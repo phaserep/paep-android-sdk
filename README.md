@@ -1,4 +1,4 @@
-# PAEP Android SDK Guide (ver 1.0.2)
+# PAEP Android SDK Guide (ver 1.0.4)
 
 * PAEP 운영정책에 위배되는 경우 수익금 지급이 정지될 수 있으니 유의바랍니다.
 
