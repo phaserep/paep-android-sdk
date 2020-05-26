@@ -17,7 +17,16 @@ dependencies {
 }
 ```
 
-2. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
+2. Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
+```
+repositories {
+...
+    maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+...
+}
+```
+
+3. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
 
 ## 배너 광고 등록하기
 ### 레이아웃 변경
