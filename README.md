@@ -20,9 +20,9 @@ dependencies {
 2. Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
 ```
 repositories {
-...
+    google()
+    jcenter()
     maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
-...
 }
 ```
 
