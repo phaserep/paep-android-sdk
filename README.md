@@ -1,8 +1,16 @@
-# PAEP Android SDK Guide (ver 1.0.4)
+# PAEP Android SDK Guide (ver 1.0.8)
 
 * PAEP 운영정책에 위배되는 경우 수익금 지급이 정지될 수 있으니 유의바랍니다.
 
-## PAPE Adx 시작하기
+## PAPE SDK Release Note
+| Version | Comment |
+|:---:|:---:|
+| `1.0.8` | AdMob 미디에이션 AddOn 추가 |
+| `1.0.7` | AdPopCorn 미디에이션 추가 |
+| `1.0.6` | AdFit 미디에이션 추가 |
+| `1.0.5` | 안정화 |
+
+## PAPE SDK 시작하기
 * 최신버전의 PAEP Adx SDK 사용을 권장합니다.
 
 ### 1. 광고단위ID (Client ID) 발급받기
@@ -10,14 +18,14 @@
 * 영역 리스트 메뉴의 TAG열람을 통하여 광고단위ID를 확인할 수 있습니다. (PAD-xxxxxxxxxxxx)
 
 ### 2. 운영앱 프로젝트에 PAEP Adx SDK 추가하기
-1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
+1. (필수) App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
 ```
 dependencies {
-    implementation 'kr.co.paep:paep-sdk:1.0.4'
+    implementation 'kr.co.paep:paep-sdk:1.0.8'
 }
 ```
 
-2. Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
+2. (필수) Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
 ```
 repositories {
     google()
@@ -26,7 +34,13 @@ repositories {
 }
 ```
 
-3. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
+3. (필수) Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
+
+4. (옵션) AdPopCorn 미디에이션을 사용하신다면 AndroidManifest.xml 파일에 애드팝콘 키를 추가해줍니다.
+```
+<meta-data android:name="igaworks_app_key" android:value="xxxxxxxxx" />
+<meta-data android:name="igaworks_hash_key" android:value="xxxxxxxxxxxxxxxx" />
+```
 
 ## 배너 광고 등록하기
 ### 레이아웃 변경
@@ -75,7 +89,12 @@ protected void onCreate(Bundle savedInstanceState) {
   adView.setAdQuery(); //광고 요청
 }
 ```
-    
+
+## 미디에이션 애드온 가이드
+| 플랫폼 | AddOn SDK | 가이드 |
+|:---:|:---:|:---:|
+| `AdMob` | implementation 'kr.co.paep:addon-admob:1.0.1' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/admob.md) |
+
 ## HELP
 ### 에러 코드
 | message.what | 의미 |
@@ -86,6 +105,17 @@ protected void onCreate(Bundle savedInstanceState) {
 | `302` | 광고 소재 없음 |
 | `401` | 광고 로딩 실패 |
 | `402` | SDK 내부 오류 |
+
+### PAEP SDK, ADDON Gradle sync 오류시
+1. Project build.gradle 파일에 paep의 repository를 추가하여 해결합니다.
+```
+repositories {
+    google()
+    jcenter()
+    maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+    maven { url 'https://dl.bintray.com/phase/paep' }
+}
+```
 
     
 Copyright © PAEP. All rights reserved.
