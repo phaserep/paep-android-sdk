@@ -1,6 +1,6 @@
 # PAEP Android SDK Guide (ver 1.0.8)
 
-* PAEP 운영정책에 위배되는 경우 수익금 지급이 정지될 수 있으니 유의바랍니다.
+* PAEP SDK를 이용한 앱광고 송출 가이드입니다.
 
 ## PAPE SDK Release Note
 | Version | Comment |
