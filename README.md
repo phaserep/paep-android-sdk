@@ -36,7 +36,7 @@ repositories {
 
 3. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
 
-4. AdPopCorn 미디에이션을 사용하신다면 AndroidManifest.xml 파일에 애드팝콘 키를 추가해줍니다.
+4. AndroidManifest.xml 파일에 애드팝콘 키를 추가해줍니다.
 ```
 <meta-data android:name="igaworks_app_key" android:value="xxxxxxxxx" />
 <meta-data android:name="igaworks_hash_key" android:value="xxxxxxxxxxxxxxxx" />
