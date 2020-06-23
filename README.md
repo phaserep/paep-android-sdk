@@ -18,14 +18,14 @@
 * 영역 리스트 메뉴의 TAG열람을 통하여 광고단위ID를 확인할 수 있습니다. (PAD-xxxxxxxxxxxx)
 
 ### 2. 운영앱 프로젝트에 PAEP Adx SDK 추가하기
-1. (필수) App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
+1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
 ```
 dependencies {
     implementation 'kr.co.paep:paep-sdk:1.0.8'
 }
 ```
 
-2. (필수) Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
+2. Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
 ```
 repositories {
     google()
@@ -34,9 +34,9 @@ repositories {
 }
 ```
 
-3. (필수) Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
+3. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
 
-4. (옵션) AdPopCorn 미디에이션을 사용하신다면 AndroidManifest.xml 파일에 애드팝콘 키를 추가해줍니다.
+4. AdPopCorn 미디에이션을 사용하신다면 AndroidManifest.xml 파일에 애드팝콘 키를 추가해줍니다.
 ```
 <meta-data android:name="igaworks_app_key" android:value="xxxxxxxxx" />
 <meta-data android:name="igaworks_hash_key" android:value="xxxxxxxxxxxxxxxx" />
