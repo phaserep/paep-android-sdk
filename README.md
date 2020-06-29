@@ -56,6 +56,15 @@ repositories {
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1" />
+        
+<kr.co.paep.paepsdk.PaepAdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="center_horizontal" />
+
 ```
         
 * 광고의 크기는 자동으로 조절됩니다.
