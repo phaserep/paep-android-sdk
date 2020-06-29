@@ -1,4 +1,4 @@
-# PAEP Android SDK Guide (ver 1.0.8)
+# PAEP Android SDK Guide (ver 1.1.0)
 
 * PAEP SDK를 이용한 앱광고 송출 가이드입니다.
 
@@ -21,7 +21,7 @@
 1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
 ```
 dependencies {
-    implementation 'kr.co.paep:paep-sdk:1.0.8'
+    implementation 'kr.co.paep:paep-sdk:1.1.0'
 }
 ```
 
