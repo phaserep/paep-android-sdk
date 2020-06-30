@@ -102,7 +102,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ## 미디에이션 애드온 가이드
 | 플랫폼 | AddOn SDK | 가이드 |
 |:---:|:---:|:---:|
-| `AdMob` | implementation 'kr.co.paep:addon-admob:1.0.1' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/admob.md) |
+| `AdMob` | implementation 'kr.co.paep:addon-admob:1.0.2' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/admob.md) |
 
 ## HELP
 ### 에러 코드
