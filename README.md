@@ -38,9 +38,9 @@ repositories {
 ```
 
 3. 애드팝콘 사용 준비
-```
-[라이브러리 다운로드](https://github.com/phaserep/paep-android-sdk/blob/master/IgawSSP_v2.2.9a.aar)
-```
+
+[라이브러리 다운로드](https://github.com/phaserep/paep-android-sdk/blob/master/IgawSSP_v2.2.9a.aar?raw=true)
+
 다운로드 받은 IgawSSP-.aar 파일을 프로젝트 /app/libs 경로에 복사하신 후 gradle 을 업데이트합니다.
 
 ```
