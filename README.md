@@ -1,4 +1,4 @@
-# PAEP Android SDK Guide (ver 1.1.0)
+# PAEP Android SDK Guide (ver 1.0.9)
 
 * PAEP SDK를 이용한 앱광고 송출 가이드입니다.
 
@@ -18,15 +18,18 @@
 * 영역 리스트 메뉴의 TAG열람을 통하여 광고단위ID를 확인할 수 있습니다. (PAD-xxxxxxxxxxxx)
 
 ### 2. 운영앱 프로젝트에 PAEP Adx SDK 추가하기
-1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK를 추가합니다.
+1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Adx SDK 추가
 ```
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation 'kr.co.paep:paep-sdk:1.1.0'
 }
 ```
 
-2. Project build.gradle 파일에 카카오Adfit 사용을 위한 저장소를 추가합니다.
+2. 카카오 Adfit 사용 준비
 ```
+//Project build.gradle 파일 저장소 추가
+
 repositories {
     google()
     jcenter()
@@ -34,13 +37,20 @@ repositories {
 }
 ```
 
-3. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
-
-4. AndroidManifest.xml 파일에 애드팝콘 키를 추가해줍니다.
+3. 애드팝콘 사용 준비
 ```
+[라이브러리 다운로드](https://github.com/phaserep/paep-android-sdk/blob/master/IgawSSP_v2.2.9a.aar)
+```
+다운로드 받은 IgawSSP-.aar 파일을 프로젝트 /app/libs 경로에 복사하신 후 gradle 을 업데이트합니다.
+
+```
+//AndroidManifest.xml 파일 발급 받으신 키 추가
 <meta-data android:name="igaworks_app_key" android:value="xxxxxxxxx" />
 <meta-data android:name="igaworks_hash_key" android:value="xxxxxxxxxxxxxxxx" />
 ```
+
+4. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
+
 
 ## 배너 광고 등록하기
 ### 레이아웃 변경
