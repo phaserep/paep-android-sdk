@@ -1,4 +1,4 @@
-# PAEP Android SDK Guide (ver 1.0.9)
+# PAEP Android SDK Guide (ver 1.1.0)
 
 * PAEP SDK를 이용한 앱광고 송출 가이드입니다.
 
