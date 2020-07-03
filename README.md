@@ -49,7 +49,32 @@ repositories {
 <meta-data android:name="igaworks_hash_key" android:value="xxxxxxxxxxxxxxxx" />
 ```
 
-4. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
+4. Proguard 설정
+```
+-keep class kr.co.paep.** { public *; }
+-keep class com.kkao.adfit.** { *; }
+-keep class com.igaworks.** { *; }
+-dontwarn com.igaworks.**
+
+##---------------Begin: proguard configuration for Gson  ----------
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+
+# For using GSON @Expose annotation
+-keepattributes *Annotation*
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+-keep class com.igaworks.gson.stream.** { *; }
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.igaworks.adbrix.model.** { *; }
+##---------------End: proguard configuration for Gson  ----------
+
+```
+
+5. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
 
 
 ## 배너 광고 등록하기
