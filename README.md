@@ -1,4 +1,4 @@
-# PAEP Android SDK Guide (ver 1.1.2)
+# PAEP Android SDK Guide (ver 1.3.1)
 
 * PAEP SDK를 이용한 앱광고 송출 가이드입니다.
 
@@ -23,7 +23,7 @@
 ```
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    implementation 'kr.co.paep:paep-sdk:1.1.2'
+    implementation 'kr.co.paep:paep-sdk:1.3.1'
 }
 ```
 
