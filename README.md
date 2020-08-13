@@ -27,18 +27,7 @@ dependencies {
 }
 ```
 
-2. 카카오 Adfit 사용 준비
-```
-//Project build.gradle 파일 저장소 추가
-
-repositories {
-    google()
-    jcenter()
-    maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
-}
-```
-
-3. 애드팝콘 사용 준비
+2. 애드팝콘 사용 준비
 
 [라이브러리 다운로드](https://github.com/phaserep/paep-android-sdk/blob/master/IgawSSP_v2.2.9a.aar?raw=true)
 
@@ -48,6 +37,18 @@ repositories {
 //AndroidManifest.xml 파일 발급 받으신 키 추가
 <meta-data android:name="igaworks_app_key" android:value="xxxxxxxxx" />
 <meta-data android:name="igaworks_hash_key" android:value="xxxxxxxxxxxxxxxx" />
+```
+
+3. DSP 리파지토리 설정
+```
+//Project build.gradle 파일 저장소 추가
+
+repositories {
+    google()
+    jcenter()
+    maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+    maven { url "https://pubsdk-bin.criteo.com/publishersdk/android" }
+}
 ```
 
 4. Proguard 설정
