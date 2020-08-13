@@ -151,6 +151,7 @@ repositories {
     google()
     jcenter()
     maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+    maven { url "https://pubsdk-bin.criteo.com/publishersdk/android" }
     maven { url 'https://dl.bintray.com/phase/paep' }
 }
 ```
