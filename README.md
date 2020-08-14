@@ -78,21 +78,6 @@ repositories {
 
 5. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
 
-6. API28 이상 대응(필수)
-```
-1. res/xml/network_security_config.xml 추가
-<?xml version="1.0" encoding="utf-8"?>
-<network-security-config>
-    <base-config cleartextTrafficPermitted="true"/>
-</network-security-config>
-
-2. 위 xml 파일을 AndroidManifest.xml에 네트워크 보안 구성 파일로 지정
-<application
-... 생략 ...
-        android:networkSecurityConfig="@xml/network_security_config">
-... 생략 ...
-</application
-```
 
 ## 배너 광고 등록하기
 ### 레이아웃 변경
