@@ -15,7 +15,9 @@ dependencies {
 
 2. AndroidManifest.xml 파일에 애드몹에서 발급받은 Application Id를 추가합니다.
 ```
-<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-xxxxxxxxxxxxxxxx~xxxxxxxxxx"/>
+<application>
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-xxxxxxxxxxxxxxxx~xxxxxxxxxx"/>
+</application>    
 ```
 
 3. Sync Project with Gradle Files를 클릭하여 변경사항을 적용합니다.
