@@ -9,7 +9,7 @@
 1. App 모듈 build.gradle 파일에 최신 버전의 PAEP Criteo Addon을 추가합니다.
 ```
 dependencies {
-    implementation 'kr.co.paep:addon-criteo:1.0.2'
+    implementation 'io.github.phaserep:addon-criteo:1.0.5'
 }
 ```
 
