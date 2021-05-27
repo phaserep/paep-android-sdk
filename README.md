@@ -1,11 +1,11 @@
-# PAEP Android SDK Guide (ver 1.3.3)
+# PAEP Android SDK Guide (ver 1.3.5)
 
 * PAEP SDK를 이용한 앱광고 송출 가이드입니다.
 
 ## PAPE SDK Release Note
 | Version | Comment |
 |:---:|:---:|
-| `1.3.3` | 라이브러리 저장소 변경 |
+| `1.3.5` | 라이브러리 저장소 변경 |
 | `1.1.2` | Criteo 미디에이션 AddOn 추가 |
 | `1.0.8` | AdMob 미디에이션 AddOn 추가 |
 | `1.0.7` | AdPopCorn 미디에이션 추가 |
@@ -24,7 +24,7 @@
 ```
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    implementation 'kr.co.paep:paep-sdk:1.3.3'
+    implementation 'kr.co.paep:paep-sdk:1.3.5'
 }
 ```
 
@@ -132,8 +132,8 @@ protected void onCreate(Bundle savedInstanceState) {
 ## 미디에이션 애드온 가이드
 | 플랫폼 | AddOn SDK | 가이드 |
 |:---:|:---:|:---:|
-| `AdMob` | implementation 'io.github.phaserep:addon-admob:1.0.4' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/admob.md) |
-| `Criteo` | implementation 'io.github.phaserep:addon-criteo:1.0.5' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/criteo.md) |
+| `AdMob` | implementation 'io.github.phaserep:addon-admob:1.0.6' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/admob.md) |
+| `Criteo` | implementation 'io.github.phaserep:addon-criteo:1.0.6' | [연동가이드](https://github.com/phaserep/paep-android-sdk/blob/master/criteo.md) |
 
 ## HELP
 ### 에러 코드
